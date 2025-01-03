@@ -1,0 +1,134 @@
+.portfolio {
+
+
+    .blur-hero {
+        top: -20%;
+        right: 0%;
+    }
+
+    .portfolio-hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+
+        .hero-portfolio-content {
+            width: 50%;
+
+
+        }
+
+        .hero-portfolio-image {
+            width: 50%;
+            text-align: right;
+            
+           
+
+        }
+
+    }
+
+    .portfolio-collection {
+        padding-top: 50px;
+        padding-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 10px;
+
+        .portfolio-item {
+            flex-basis: 32%;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.123);
+            padding: 20px;
+            background-color: $white;
+
+            img {
+                width: 100%;
+                height: 230px;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+
+            .common-overview-title {
+                padding: 10px 0px;
+            }
+
+            &:hover {
+                img {
+                    scale: 1.01;
+                }
+            }
+        }
+    }
+}
+
+
+// responsive 
+
+@include custom_max(992px) {
+
+    .portfolio {
+        .portfolio-hero {
+
+            align-items: start;
+            flex-direction: column;
+
+
+            .hero-portfolio-content {
+                width: 100%;
+
+
+            }
+
+            .hero-portfolio-image {
+                width: 100%;
+                margin-top: 30px;
+
+            }
+
+        }
+
+        .portfolio-collection {
+            padding-top: 10px;
+
+            flex-wrap: wrap;
+
+            .portfolio-item {
+                flex-basis: 48%;
+
+                margin-top: 20px;
+
+
+            }
+        }
+    }
+
+
+}
+
+
+
+@include custom_max(576px) {
+
+    .portfolio {
+       
+
+        .portfolio-collection {
+           
+
+            .portfolio-item {
+                flex-basis: 100%;
+
+                img {
+                    height: 200px;
+                   
+                }
+
+            }
+        }
+    }
+
+
+}

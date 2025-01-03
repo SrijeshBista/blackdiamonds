@@ -1,0 +1,118 @@
+/* gallery section start   */
+#gallery-page{
+    height: fit-content ;
+}
+.gallery-page-left h5{
+    font-size: 28px;
+    font-family: var(--button-font);
+    padding: 20px 30px;
+    cursor: pointer;
+}
+.gallery-page-left h5:hover{
+        color: var(--primary); 
+        font-size: 40px;  
+        transition: 300ms ease-in-out;      
+}
+.gallery-page-main{
+    padding-top:10% ;
+    display: flex;
+    justify-content: space-between;
+}
+.gallery-img-card{
+    width: 250px;
+    height: 350px;
+}
+.gallery-page-right img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    
+}
+.gallery-page-left{
+    width: 24%;
+    /* border: 1px solid red; */
+}
+.gallery-page-right{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 30px;
+    justify-content: flex-start;
+    width: 75%;
+    /* border: 1px solid white; */
+    height: 80vh;
+    overflow: scroll;
+}
+/* responsive start  */
+@media screen and (min-width:769px) and (max-width: 1200px) {
+   .gallery-page-left{
+    display: flex;
+    justify-content: start;
+    width: 800px;
+    font-size: 64px;
+   } 
+   .gallery-page-main{
+    flex-direction: column;
+    padding-top: 15%;
+   }
+   .gallery-page-left h5{
+    font-size: 40px;
+   }
+   .gallery-page-left h5:hover{
+    font-size: 50px;
+   }
+   .gallery-page-right img{
+    width: 100%;
+    height: 350px;
+    
+   }
+   .gallery-img-card{
+    width: 250px;
+   }
+   .gallery-page-right {
+    width: 82%;
+   }
+}
+@media screen and (max-width: 768px) {
+    .gallery-page-left{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        width: fit-content;
+        overflow-x: scroll;
+       } 
+       .gallery-page-main{
+        flex-direction: column;
+        align-items: start ;
+        justify-content: center;
+        padding-top: 30%;
+       }
+       .gallery-page-left h5{
+        font-size: 18px;
+        padding: 0 10px;
+        width: fit-content;
+        padding-bottom: 20px;
+
+        
+       }
+       .gallery-page-left h5:hover{
+        font-size: 30px;
+       }
+       .gallery-page-right {
+        width: 100%;
+       }
+       .gallery-img-card {
+        width: 100%;
+       }
+       .category-filter:hover {
+        font-size: 24px !important;
+       }
+       .category-filter.active {
+        font-size: 24px !important;
+       }
+       .category-filter{
+        
+       }
+}
+/* responsive end  */
+/* gallery section end  */

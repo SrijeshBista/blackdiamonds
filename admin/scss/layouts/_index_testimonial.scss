@@ -1,0 +1,65 @@
+.index-testimonial {
+  padding-top: 0px;
+
+  .testimonial-row {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 50px;
+
+    .owl-stage-outer {
+      overflow: visible !important;
+    }
+
+    .testimonial-item {
+
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: $white;
+      position: relative;
+      margin: 10px;
+
+      .quote {
+        position: absolute;
+        top: 60px;
+        right: 50%;
+        transform: translate(50%, -50%);
+        width: 100px;
+      }
+
+      .section-des {
+        text-align: center;
+        line-height: 1.5;
+      }
+
+      .name {
+        color: $black;
+        font-weight: 700;
+        font-size: 16px;
+        text-align: center;
+        padding: 15px 0px 5px 0px;
+
+      }
+
+      .package {
+        font-size: 15px;
+        text-align: center;
+        color: $black;
+        font-weight: 500;
+
+
+      }
+
+      .profile {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        bottom: -60px;
+        right: 50%;
+        transform: translate(50%, -50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,313 @@
+.banner {
+    position: relative;
+    overflow: hidden;
+
+    .hero-banner-slider {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        z-index: -1;
+
+        .item {
+            height: 100vh;
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: 100% !important;
+                object-fit: cover !important;
+            }
+        }
+
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000000af;
+        z-index: 1;
+    }
+
+
+
+
+    .container {
+        height: 100%;
+
+        .banner-row {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 150px 0px 60px 0px;
+
+
+            .hero-baner-content {
+                position: relative;
+                width: 55%;
+
+                z-index: 9;
+
+                .baner-title {
+                    font-size: 58px;
+                    color: $white;
+                    line-height: 1.1;
+                    font-weight: 700;
+
+                    span {
+                        color: $primaryColor;
+                    }
+                }
+
+
+                .banner-description {
+                    padding: 25px 0px;
+                    color: $white;
+                    font-size: 18px;
+                }
+
+                .search {
+                    padding: 15px 40px;
+
+                    background: rgba(255, 255, 255, 0.1); // Light transparent background
+                    backdrop-filter: blur(10px); // Apply blur effect
+                    border-radius: 80px; // Add rounding for a nicer look
+                    width: 60%;
+                    box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.342);
+
+                    .banner-form {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        gap: 10px;
+
+                        input {
+                            background-color: transparent;
+                            border: none;
+                            outline: none;
+                            color: $white; // Ensure input text is white
+                            border-bottom: 2px solid $white;
+                            width: 70%;
+                            font-size: 18px;
+
+                            &::placeholder {
+                                color: rgb(170, 164, 164); // Placeholder color
+                                font-size: 18px; // Placeholder font size
+                            }
+                        }
+
+                        button {
+                            border: none;
+                            background-color: transparent;
+
+                            i {
+                                color: white;
+                                font-size: 26px;
+                                cursor: pointer;
+
+                                &:hover {
+                                    color: rgb(170, 164, 164);
+                                }
+
+                            }
+                        }
+                    }
+                }
+
+
+
+            }
+
+            .banner-front-img {
+                width: 420px;
+                height: 420px;
+
+                .item {
+
+
+                    img {
+                        width: 400px;
+                        height: 400px;
+                        overflow: hidden;
+                        border-radius: 50% 50% 0% 50%;
+                        border: 5px solid $white;
+
+                        object-fit: cover;
+                    }
+
+                    h2 {
+                        text-align: right;
+                        padding: 20px 0px 0px 0px;
+                        font-size: 20px;
+                        text-transform: capitalize;
+                        color: $white;
+                        font-weight: 500;
+                        margin-right: 15px;
+                        font-family: $Ubuntu;
+                        margin: 5px 0px;
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+// responsive 
+@include custom_max(992px) {
+    .banner {
+
+
+
+
+
+
+
+
+        .container {
+            height: 100%;
+
+            .banner-row {
+                flex-direction: column;
+                padding: 150px 0px 60px 0px;
+                gap: 30px;
+
+                .hero-baner-content {
+                    width: 100%;
+
+
+                    .baner-title {
+                        font-size: 38px;
+
+
+
+                    }
+
+
+                    .banner-description {
+
+                        font-size: 16px;
+                    }
+
+                    .search {
+                        padding: 15px 20px;
+
+
+
+                        width: 100%;
+
+
+                        .banner-form {
+
+
+                            input {
+
+
+                                font-size: 16px;
+
+                                &::placeholder {
+                                    font-size: 16px; // Placeholder font size
+                                }
+                            }
+
+                            span {
+                                i {
+                                    font-size: 22px;
+
+
+
+                                }
+                            }
+                        }
+                    }
+
+
+
+                }
+
+
+            }
+
+        }
+    }
+
+}
+
+
+@include custom_max(576px) {
+    .banner {
+
+
+
+
+
+
+
+
+        .container {
+            height: 100%;
+
+            .banner-row {
+                flex-direction: column;
+                padding: 150px 0px 60px 0px;
+                gap: 30px;
+
+                .hero-baner-content {
+                    width: 100%;
+
+
+                    .baner-title {
+                        font-size: 32px;
+
+
+
+                    }
+
+
+                    .banner-description {
+
+                        font-size: 16px;
+                    }
+
+
+
+
+
+                }
+
+                .banner-front-img {
+                    width: 280px;
+                    height: 280px;
+
+                    .item {
+
+
+                        img {
+                            width: 270px;
+                            height: 270px;
+
+
+                        }
+
+                        h2 {
+                            font-size: 14px;
+                            text-align: center;
+
+
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}

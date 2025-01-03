@@ -1,0 +1,107 @@
+footer {
+    padding-top: 0px;
+
+    .footer-content-block {
+        padding-right: 70px;
+    }
+
+    .footer-block {
+        .logo {
+
+
+            img {
+                width: 150px;
+
+            }
+        }
+
+        .section-des {
+            color: $t-color;
+            margin: 20px 0px;
+        }
+
+        .social-icon {
+            display: flex;
+
+
+            a {
+                i {
+                    font-size: 30px;
+                    margin-right: 20px;
+                    color: $primaryColor;
+                    transition: 0.3s ease-in-out;
+
+                    &:hover {
+                        color: $liteprimaryColor;
+                    }
+                }
+            }
+        }
+
+        .block-heading {
+            margin-bottom: 20px;
+        }
+
+        .footer-nav {
+            .footer-nav-item {
+                .footer-nav-link {
+                    font-size: 16px;
+                    color: $t-color;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+
+                    &:hover {
+                        color: $secondaryColor;
+                    }
+
+                    i {
+                        color: $primaryColor;
+                        font-size: 24px;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+
+        .block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-family: cursive;
+                font-size: 12px;
+                font-weight: 600;
+                color: $secondaryColor;
+
+                a {
+                    padding: 0px 3px;
+                    font-family: cursive;
+                    color: $primaryColor;
+                    font-size: 12px;
+                    font-weight: 600;
+                    display: inline;
+
+                    &:hover {
+                        color: $liteprimaryColor;
+                    }
+                }
+            }
+
+
+        }
+    }
+}
+
+
+@include custom_max(991px) {}
+
+
+@include custom_max(767px) {}
+
+@include custom_max(576px) {}

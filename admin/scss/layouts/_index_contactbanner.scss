@@ -1,0 +1,74 @@
+.contact-banner {
+  position: relative;
+  background: url('../images/bg_2.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.637); // Dark color overlay with 50% opacity
+    z-index: 1;
+  }
+
+  .container {
+    position: relative;
+    z-index: 2; // Content in front of the overlay
+    text-align: center;
+    width: 50%;
+
+    .section-heading {
+      color: $white;
+      margin-bottom: 20px;
+
+      span {
+        color: $primaryColor;
+      }
+    }
+
+    .section-des {
+      color: $tt-color;
+    }
+
+    .cont-btn {
+      margin-top: 30px;
+    }
+  }
+}
+
+
+
+@include custom_max(992px) {
+
+  .contact-banner {
+
+
+
+
+    .container {
+
+      width: 90%;
+
+      .section-heading {
+        margin-bottom: 15px;
+
+
+      }
+
+
+
+      .cont-btn {
+        margin-top: 15px;
+      }
+    }
+  }
+
+
+
+
+
+}

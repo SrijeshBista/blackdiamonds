@@ -1,0 +1,32 @@
+.dashboard-row {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+
+  .dashboard-item {
+    flex: 1 1 calc(33.3333% - 26.6667px);
+    background-color: $bg;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+
+    i {
+      color: $primaryColor;
+      font-size: 42px;
+    }
+
+    .section-heading {
+      margin: 15px 0px;
+      padding: 0px;
+      color: $black;
+    }
+
+    .section-title {
+      margin: 0px;
+      font-family: cursive;
+    }
+
+  }
+}

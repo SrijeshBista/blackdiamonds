@@ -1,0 +1,35 @@
+@import "base/variables";
+@import "base/mixins";
+@import "modules/typography";
+@import "modules/buttons";
+@import "modules/scroll-top";
+@import "modules/common";
+@import "modules/components";
+@import "modules/breadcrumb";
+//Index Section Style
+@import "layouts/header";
+@import "layouts/index_banner";
+@import "layouts/index_featureDestination";
+@import "layouts/index_about";
+@import "layouts/index_packages";
+@import "layouts/index_testimonial";
+@import "layouts/index_contactbanner";
+@import "layouts/index_faq";
+@import "layouts/footer";
+// main pages style
+@import "layouts/page_about";
+@import "layouts/page_blogs";
+@import "layouts/page_blogsPost";
+@import "layouts/page_destination";
+@import "layouts/page_package_post";
+@import "layouts/page_search";
+@import "layouts/page_contact";
+
+// admin page style backend 
+@import "admin/login";
+@import "admin/backendpage";
+@import "admin/nav";
+@import "admin/dashboard";
+@import "admin/inquiries";
+@import "admin/country";
+@import "admin/admin";

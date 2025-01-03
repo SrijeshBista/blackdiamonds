@@ -1,0 +1,133 @@
+.index-packages {
+  .package-select {
+    .package-buttons {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto; // Enable horizontal scrolling
+      overflow-y: hidden; // Hide vertical scrolling
+      gap: 15px; // Adjust gap between buttons
+
+
+      .button {
+        flex: 0 0 auto; // Prevent buttons from shrinking or growing
+        padding: 10px 20px;
+        text-align: center;
+        color: $black;
+        border-radius: 10px;
+        cursor: pointer;
+        margin: 10px 0px; // Remove margin to prevent extra spacing
+
+        // Ensure proper box-sizing to avoid overflow issues
+        box-sizing: border-box;
+
+        &:hover {
+          box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.363);
+        }
+
+        &.active {
+          background-color: $primaryColor;
+          color: $white;
+        }
+      }
+    }
+
+    // Scrollbar styling for WebKit browsers (Chrome, Safari)
+    .package-buttons::-webkit-scrollbar {
+      height: 8px; // Adjust scrollbar height
+    }
+
+    .package-buttons::-webkit-scrollbar-thumb {
+      background-color: $primaryColor; // Scrollbar thumb color
+      border-radius: 10px; // Scrollbar thumb border radius
+    }
+
+    .package-buttons::-webkit-scrollbar-track {
+      background-color: rgba(221, 215, 215, 0.849); // Scrollbar track color
+    }
+
+    .package-row {
+      margin-top: 30px;
+      display: none;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      &.active {
+        display: flex;
+      }
+
+      .card-item {
+        width: calc(25% - 20px); // Adjusting width for 4 items per row
+      }
+    }
+  }
+}
+
+// Tablet view (992px and below)
+@include custom_max(992px) {
+
+  .index-packages {
+    .package-select {
+
+
+
+      .package-row {
+
+
+
+        .card-item {
+          width: calc(33.33% - 20px); // Adjusting width for 4 items per row
+        }
+      }
+    }
+  }
+
+
+
+
+
+}
+
+// Mobile view (768px and below)
+@include custom_max(768px) {
+
+
+  .index-packages {
+    .package-select {
+
+
+
+      .package-row {
+
+
+
+        .card-item {
+          width: calc(50% - 20px); // Adjusting width for 4 items per row
+        }
+      }
+    }
+  }
+
+}
+
+// Extra small mobile view (576px and below)
+@include custom_max(576px) {
+
+
+
+  .index-packages {
+    .package-select {
+
+
+
+      .package-row {
+
+
+
+        .card-item {
+          width: calc(100%); // Adjusting width for 4 items per row
+        }
+      }
+    }
+  }
+
+}

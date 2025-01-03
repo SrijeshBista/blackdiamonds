@@ -1,0 +1,66 @@
+.package-select {
+  .search-row {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .card-item {
+      width: calc(100% / 4 - 20px);
+    }
+
+  }
+}
+
+
+
+
+@include custom_max(992px) {
+
+
+
+  .package-select {
+    .search-row {
+      gap: 20px;
+
+
+      .card-item {
+        width: calc(100% / 3 - 20px);
+      }
+
+    }
+  }
+}
+
+@include custom_max(768px) {
+
+
+
+  .package-select {
+    .search-row {
+      gap: 20px;
+
+
+      .card-item {
+        width: calc(100% / 2 - 20px);
+      }
+
+    }
+  }
+}
+
+@include custom_max(576px) {
+
+
+
+  .package-select {
+    .search-row {
+      gap: 20px;
+
+
+      .card-item {
+        width: calc(100% / 1);
+      }
+
+    }
+  }
+}

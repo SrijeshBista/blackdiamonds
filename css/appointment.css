@@ -1,0 +1,98 @@
+#appointment-section {
+    margin-top: 10%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.appointment-form h2 {
+    font-size: 36px;
+    font-family: var(--descriptiom-font);
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.appointment-form {
+    top: 20%;
+}
+.appointment-form input[type='tel'] {
+    padding: 10px;
+    font-size: 20px;
+    width: 95%;
+    border: 2px solid var(--primary);
+    outline: none;
+    color: #121212;
+    background-color: var(--secondary);
+    border-radius: 20px;
+}
+
+.appointment-form {
+    position: absolute;
+    top: 20%;
+}
+
+.appointment-form input[type="date"] {
+    outline: none;
+    border: 1px solid var(--primary);
+    width: 47%;
+    padding: 5px 0;
+    margin-right: 10px;
+    color: #121212;
+    background-color: var(--secondary);
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.appointment-form input[type="time"] {
+    outline: none;
+    border: 1px solid var(--primary);
+    width: 47%;
+    padding: 5px 0;
+    color: #121212;
+    background-color: var(--secondary);
+    border-radius: 20px;
+    font-size: 18px;
+
+}
+
+.appointment-form select {
+    outline: none;
+    border: 1px solid var(--primary);
+    width: 47%;
+    padding: 5px 0;
+    margin: 15px 0;
+    color: #121212;
+    background-color: var(--secondary);
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.appointment-form input[type="submit"] {
+    outline: none;
+    border: 1px solid var(--primary);
+    width: 40%;
+    cursor: pointer;
+    padding: 5px 0;
+    margin: 5px 0;
+    color: #121212;
+    background-color: var(--secondary);
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: var(--primary);
+}
+
+.appointment-form input[type="submit"]:hover {
+    background-color: var(--secondary);
+}
+
+/* responsive start  */
+@media screen and (min-width:769px) and (max-width: 1200px) {
+    #appointment-section {
+        height: 70vh;
+    }
+
+    .appointment-form {
+        height: 460px;
+    }
+}
+
+/* responsive end  */

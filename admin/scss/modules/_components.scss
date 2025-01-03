@@ -1,0 +1,251 @@
+// section component start 
+
+section {
+  position: relative;
+}
+
+
+
+.section-padding {
+  padding: 60px 0px;
+}
+
+.bc-padding {
+  padding-top: 160px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 900;
+  color: $black;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+
+
+  span {
+    color: $primaryColor;
+  }
+
+}
+
+.section-des {
+  color: $t-color;
+  font-size: 17px;
+  font-weight: 500;
+  font-family: $Poppins;
+  margin: 10px 0px;
+}
+
+.section-heading {
+  font-size: 42px;
+  font-family: $Ubuntu;
+  color: $black;
+  font-weight: 800;
+  margin-bottom: 20px;
+
+  span {
+    color: $primaryColor;
+  }
+}
+
+
+// section compoent end 
+
+
+// card component
+
+// card destination package    blog       
+
+
+.card-item {
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.219);
+  padding: 20px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  &:hover {
+
+
+    .img {
+
+
+      img {
+        scale: 1.1;
+      }
+    }
+
+    .content {
+      .card-title {
+
+        color: $primaryColor;
+      }
+
+
+
+    }
+  }
+
+  .img {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 180px;
+
+    img {
+      object-fit: cover;
+      transition: 0.5s ease-in-out;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .content {
+    .card-title {
+      font-size: 16px;
+      font-family: $Ubuntu;
+      font-weight: 600;
+      padding: 15px 0px 10px 0px;
+      color: $black;
+      font-weight: 600;
+      transition: 0.3s ease-in-out;
+    }
+
+    .card-des {
+      font-size: 16px;
+      font-weight: 500;
+      color: $t-color;
+
+      i {
+        color: $primaryColor;
+        font-size: 16px;
+        margin-right: 7px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      font-weight: 500;
+      color: $t-color;
+
+      i {
+        color: $primaryColor;
+        font-size: 16px;
+        margin-right: 7px;
+      }
+    }
+
+  }
+}
+
+
+
+// admin side 
+// action button 
+
+
+.btn-done {
+  font-size: 14px;
+  background-color: $primaryColor;
+  color: $white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  border: 2px solid $primaryColor;
+  transition: 0.3s ease-in-out;
+
+
+  &:hover {
+    background-color: transparent;
+    color: $primaryColor;
+  }
+}
+
+
+.btn-red {
+  font-size: 14px;
+  background-color: rgb(223, 5, 5);
+  color: $white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 600;
+  border: 2px solid rgb(223, 5, 5);
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    color: rgb(223, 5, 5);
+  }
+
+
+}
+
+
+
+
+
+
+// drop down arrow down 
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* This ensures the content is spaced evenly */
+}
+
+.dropdown-toggle::after {
+  margin-left: 10px;
+  /* Use margin-left to push the arrow to the right */
+  margin-right: 10px;
+  /* Reset margin-right */
+  vertical-align: .255em;
+  content: "";
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+}
+
+// dropdown arrow down end 
+
+
+
+
+
+
+
+
+@include custom_max(992px) {
+
+  .section-padding {
+    padding: 40px 0px;
+  }
+
+  .bc-padding {
+    padding-top: 130px;
+  }
+
+  .section-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+
+  }
+
+  .section-des {
+    font-size: 16px;
+  }
+
+  .section-heading {
+    font-size: 32px;
+    margin-bottom: 15px;
+
+
+  }
+
+
+
+
+
+}
+
+@include custom_max(576px) {}

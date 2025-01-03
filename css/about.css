@@ -1,0 +1,169 @@
+/* about us section  */
+
+#about {
+    height: fit-content;
+}
+
+.about-main {
+    display: flex;
+}
+
+.about-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.about-title {
+    font-family: var(--body-font);
+    font-size: 64px;
+    font-weight: 200;
+    position: relative;
+    width: fit-content;
+}
+
+.about-title .t-up {
+    color: var(--primary);
+    margin-top: -30px;
+    /* margin-left: -30px; */
+}
+
+.about-title .t-down {
+    color: var(--secondary);
+    text-align: right;
+    margin-top: -80px;
+    margin-right: -110px;
+}
+
+.about-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center
+}
+
+.about-card {
+    border: 1px solid var(--primary);
+    width: 90px;
+    padding: 10px;
+}
+
+.about-card h3 {
+    font-size: 42px;
+}
+
+.about-card h3 span {
+    font-size: 20px;
+}
+
+/* responsive start  */
+@media screen and (max-width: 768px) {
+
+    /* about start  */
+    .about-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-left {
+        width: 100%;
+    }
+
+    .about-left img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    h1 {
+        font-size: 64px;
+        /* text-align: center; */
+    }
+
+    .about-title {
+        margin-left: 0px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-title .t-up {
+        margin-top: -30px;
+        margin-right: 0;
+    }
+
+    .about-des {
+        /* margin-top: -15px; */
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .about-des p {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .about-card p {
+        font-size: 13px;
+    }
+
+    .about-title .t-down {
+        margin-top: -50px;
+        margin-right: 10px;
+    }
+
+    .about-cards {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    /* about section end  */
+}
+
+@media screen and (min-width:769px) and (max-width: 1200px) {
+
+    /* about start  */
+    .about-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-left {
+        width: 100%;
+    }
+
+    .about-left img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .about-title {
+        /* border: 2px solid whitesmoke; */
+        width: 45%;
+    }
+
+    .about-title .t-up {
+        margin-top: -30px;
+        margin-right: 0;
+    }
+
+    .about-title .t-down {
+        text-align: right;
+        margin-top: -80px;
+        margin-right: -10px;
+    }
+
+    .about-des {
+        margin-top: -15px;
+        font-size: 25px;
+    }
+
+    .about-cards {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    /* about end  */
+}
+
+/* responsive end  */
+/* about section end  */

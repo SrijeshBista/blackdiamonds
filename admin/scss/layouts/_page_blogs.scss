@@ -1,0 +1,83 @@
+.blog-page {
+    .blog-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        .card-item {
+            flex: 0 1 calc((100% / 3) - 20px);
+            /* width of each item */
+            box-sizing: border-box;
+
+            .card-title {
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 2;
+            }
+
+            .para {
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .read-more {
+                color: $primaryColor;
+            }
+        }
+
+    }
+}
+
+
+
+@include custom_max(768px) {
+
+    .blog-page {
+        .blog-row {
+
+            gap: 20px;
+
+            .card-item {
+                flex: 0 1 calc((100% / 2) - 20px);
+
+
+
+            }
+
+        }
+    }
+
+
+
+
+
+}
+
+@include custom_max(576px) {
+
+    .blog-page {
+        .blog-row {
+
+            gap: 20px;
+
+            .card-item {
+                flex: 0 1 calc((100% / 1));
+
+
+
+            }
+
+        }
+    }
+
+
+
+
+
+}

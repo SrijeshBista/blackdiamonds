@@ -1,0 +1,93 @@
+
+
+.container{
+    width: 95%;
+    margin: auto;
+}
+header{
+    width: 100%;
+    position: fixed;
+    background-color:#121212 ;
+    top:0;
+    left: 0;
+    z-index: 10000;
+    padding-bottom: 5px;
+}
+body{
+    background-color:#121212 ;
+    color: #EEEEEE;
+    position: relative;
+    /* width: 100%; */
+    
+   
+    
+
+}
+ /* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+  }
+#makeup{
+    /* height: 74vh; */
+}
+p{
+    color: #EEEEEE;
+    background: none;
+    margin: 5px;
+    text-align: left;
+    font-size: 16px;
+}
+button a{
+    font-family: var(--button-font);
+   
+}
+section{
+    height:100vh;
+}
+#services{
+    /* height: 100vh; */
+    background: none;
+    /* overflow: hidden; */
+}
+:root{
+    --descriptiom-font:"Julius Sans One", sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    margin: 0;
+    background: none;
+}
+
+#login-page{
+    margin-top: 20vh;
+    overflow: hidden;
+    height: 75vh;
+}
+button{
+    cursor: pointer;
+}
+#blog-page{
+    padding-top: 20vh;
+    height: fit-content;
+}
+.bigcontainer{
+    width: 80%;
+    margin: auto;
+    
+}

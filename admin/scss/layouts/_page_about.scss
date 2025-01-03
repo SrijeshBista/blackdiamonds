@@ -1,0 +1,171 @@
+.about-page {
+
+  .hero-about-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .hero-about-page-content {
+      width: 48%;
+      margin: 20px 0px;
+
+      .list-content {
+        margin: 10px 0px;
+
+        .list-item {
+          display: flex;
+          margin-bottom: 20px;
+
+          .icon i {
+            font-size: 28px;
+            color: $primaryColor;
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+
+    .hero-about-page-image {
+      width: 48%;
+      border-radius: 10px;
+      overflow: hidden;
+
+
+    }
+
+    .second-img {
+      position: relative;
+
+      img {
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+      }
+
+      .exp {
+        position: absolute;
+        bottom: 50px;
+        right: 50px;
+        z-index: 9;
+        background-color: $white;
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.092);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+    }
+
+  }
+
+  .second-about {
+    margin-top: 40px;
+  }
+
+
+}
+
+
+
+
+
+// responsive 
+@include custom_max(992px) {
+  .about-page {
+
+    .hero-about-page {
+      flex-direction: column;
+
+      .hero-about-page-content {
+        width: 100%;
+        margin: 20px 0px;
+
+        .list-content {
+
+
+          .list-item {
+            display: flex;
+
+            .icon i {
+              font-size: 22px;
+
+            }
+          }
+        }
+      }
+
+      .hero-about-page-image {
+        width: 100%;
+
+
+
+      }
+
+
+
+    }
+
+    .second-about {
+      flex-direction: column-reverse;
+      margin-top: 0px;
+    }
+
+
+  }
+
+
+  .about-blog-item {
+    margin: 10px;
+  }
+}
+
+
+@include custom_max(576px) {
+
+
+  .about-page {
+
+    .hero-about-page {
+
+
+
+
+
+
+      .second-img {
+        position: relative;
+
+        img {
+          width: 300px;
+          height: 300px;
+        }
+
+        .exp {
+          position: absolute;
+          bottom: 10px;
+          right: 10px;
+          z-index: 9;
+          background-color: $white;
+          width: 150px;
+          height: 150px;
+          padding: 20px;
+
+
+        }
+      }
+
+    }
+
+    .second-about {
+      flex-direction: column-reverse;
+    }
+
+
+  }
+
+
+}

@@ -1,0 +1,128 @@
+/* profile start  */
+#profile{
+    height: 60vh;
+}
+.profile-main{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-top:9% ;
+    gap: 5%;
+}
+.client_profile{
+    width: 30%;
+    height: 300px;
+}
+.client_profile h2 span{
+    color: var(--secondary);
+}
+.client_profile h2{
+    font-size: 64px;
+    color: var(--primary);
+}
+.client_profile li{
+    list-style: none;
+    font-size: 25px;
+    padding-top: 15px;
+}
+.client_profile li a{
+    color: var(--secondary);
+    text-decoration: none;
+    border: 2px solid var(--primary);
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 18px;
+    background-color: var(--primary);
+}
+.client_profile li a:hover{
+    background-color: var(--secondary);
+    color: #121212;
+}
+.form_area{
+    width: 35%;
+    height: 300px;
+}
+.form_area form{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.form_area input{
+    width: 90%;
+    margin: 10px 0;
+    padding: 7px 15px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    outline: none;
+    color: var(--secondary);
+}
+.form_area h2 span{
+    color: var(--secondary);
+}
+.form_area h2{
+    color: var(--primary);
+    font-size: 64px;
+}
+.form_area input::placeholder{
+    color: var(--secondary);
+}
+.form_area form button[type='submit']{
+    padding: 6px 20px;
+    border-radius: 20px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+    font-size: 17px;
+}
+
+/* profile end  */
+/* responsive start  */
+@media screen and (min-width:769px) and (max-width: 1200px) {
+    #profile{
+        height: 45vh;
+    }
+    .profile-main{
+        padding-top:20%;
+    }
+    .client_profile{
+        width: 50%;
+    }
+    .form_area{
+    width: 50%;
+    }
+    .client_profile h2{
+        font-size: 44px;
+    }
+    .form_area h2{
+        font-size: 44px;
+    }
+}
+@media screen and (max-width: 768px) {
+    #profile{
+        height:fit-content;
+        padding-top: 20%;
+        
+    }
+    .profile-main{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30%;
+    }
+    .client_profile h2{
+        font-size: 34px;
+    }
+    .form_area h2{
+        font-size: 34px;
+    }
+    .form_area {
+        width: 100%;
+        /* height: 0; */
+    }
+    .client_profile {
+        width: 100%;
+        /* height: 300px; */
+    }
+}
+
+/* responsive end   */

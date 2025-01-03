@@ -1,0 +1,97 @@
+// primary- btn 
+.btn-primary {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 10px 30px;
+  font-family: $Poppins;
+  font-weight: 400;
+  color: $white;
+  background-color: $primaryColor;
+  border: 3px solid $primaryColor;
+  border-radius: 60px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 1s ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    color: $primaryColor;
+    border-color: $primaryColor;
+    animation: rotate-border-p 1s linear forwards;
+  }
+
+  @keyframes rotate-border-p {
+    0% {
+      border-top-color: $secondaryColor;
+    }
+
+    25% {
+      border-right-color: $secondaryColor;
+    }
+
+    50% {
+      border-bottom-color: $secondaryColor;
+    }
+
+    75% {
+      border-left-color: $secondaryColor;
+    }
+
+    100% {
+      border-top-color: $primaryColor;
+    }
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+}
+
+// secondar- btn 
+.btn-secondary {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 10px 30px;
+  font-family: $Poppins;
+  font-weight: 400;
+  color: $white;
+  background-color: $secondaryColor;
+  border: 3px solid $secondaryColor;
+  border-radius: 60px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border-color 1s ease-in-out;
+
+  &:hover {
+    background-color: transparent;
+    color: $secondaryColor;
+    border-color: $secondaryColor;
+    animation: rotate-border 1s linear forwards;
+  }
+
+  @keyframes rotate-border {
+    0% {
+      border-top-color: $primaryColor;
+    }
+
+    25% {
+      border-right-color: $primaryColor;
+    }
+
+    50% {
+      border-bottom-color: $primaryColor;
+    }
+
+    75% {
+      border-left-color: $primaryColor;
+    }
+
+    100% {
+      border-top-color: $secondaryColor;
+    }
+  }
+
+  span {
+    position: relative;
+    z-index: 1;
+  }
+}

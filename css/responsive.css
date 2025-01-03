@@ -1,0 +1,118 @@
+@media screen and (min-width:769px) and (max-width: 1200px) {
+    
+    .logo img{
+        width: 150px;
+    }
+    .hamburger-menu {
+        display: flex;
+    }
+    .nav-bar {
+        display: none;
+    }
+    .cta-button{
+     display: none;
+     background: none;
+    }
+    .cta-button span{
+     display: none;
+     
+    }       
+    .header-login  {
+        width: 44px;
+        padding: 0;
+       }
+       .header-login {
+        background: none;
+        padding: 0;
+       }
+       .loginbtn{
+        /* background: none; */
+        padding: 0;
+       }
+       .loginbtn span{ 
+        display: none;
+        
+       }
+       .header-login span{
+        display: none;
+       }
+       .appointment-btn {
+        justify-content: flex-end;
+        width: 70%;
+       }
+       .appointment-btn .login-buttons{
+        display: block;
+       }
+    .t-up,.t-down{
+        width: fit-content !important;
+        margin: 0 !important;
+       }
+     
+
+}
+/* Responsive Media Query */
+ @media screen and (max-width: 768px) {
+    
+   .hamburger-menu {
+       display: flex;
+   }
+   .banner-background img{
+    display: none;
+}
+   .nav-bar {
+       display: none;
+   }
+   .cta-button{
+    display: none;
+    background: none;
+   }
+   .cta-button span{
+    display: none;
+   }
+   .logo img{
+    width: 100px;
+   }
+   .header-login  {
+    width: 44px;
+    padding: 0;
+   }
+   .header-login {
+    background: none;
+    padding: 0;
+   }
+   .loginbtn{
+    /* background: none; */
+    padding: 0;
+   }
+   .loginbtn span{ 
+    display: none;
+    
+   }
+   .header-login span{
+    display: none;
+   }
+   .appointment-btn .login-buttons{
+    display: block;
+   }
+   .appointment-btn {
+    width: fit-content;
+    margin-left: 20%;
+   }
+   .t-up,.t-down{
+    width: fit-content !important;
+    margin: 0 !important;
+   }
+   .appointment-main form{
+    position: relative;
+   }
+   #appointmentForm input, #appointmentForm select{
+    width: 95% !important;
+   }
+   .appointment-form{
+    height: fit-content;
+   }
+} 
+/* Show Menu when Checkbox is Checked */
+#menu-toggle:checked ~ .ham-menu {
+   display: flex;
+}

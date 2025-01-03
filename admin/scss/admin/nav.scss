@@ -1,0 +1,66 @@
+.backend-nav {
+  padding: 10px 30px;
+  height: 100vh;
+  background-color: $bg;
+
+  .sidenav-header {
+    width: 150px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .sidenav-body {
+    margin-top: 40px;
+    height: 70vh;
+    overflow-y: scroll;
+    /* Scroll only on Y-axis */
+    overflow-x: hidden;
+    /* Prevent scrolling on X-axis */
+
+    /* Custom scrollbar styles for Webkit browsers */
+    ::-webkit-scrollbar {
+      width: 3px;
+      /* Make the scrollbar thinner */
+    }
+
+    ::-webkit-scrollbar-track {
+      background: $bg;
+      /* Background color of the scrollbar track */
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: darkgreen;
+      /* Color of the scrollbar thumb */
+      border-radius: 4px;
+      /* Rounded corners for the scrollbar thumb */
+    }
+
+    /* Hide the top and bottom arrows */
+    ::-webkit-scrollbar-button {
+      display: none;
+    }
+
+    .navbar-nav {
+      .nav-item {
+        margin-bottom: 15px;
+
+        .nav-link {
+          font-size: 16px;
+          color: $black;
+          font-weight: 500;
+          transition: 0.3;
+
+          &:hover {
+            color: $primaryColor;
+          }
+
+          &.active {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+  }
+}

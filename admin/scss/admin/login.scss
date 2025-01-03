@@ -1,0 +1,81 @@
+.admin-index-page {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+
+  .admin-login-box {
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('../images/admin.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.692);
+    /* Adjust shadow as needed */
+    z-index: 1;
+    padding: 40px;
+    border-radius: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.685);
+      /* Adjust opacity as needed */
+      z-index: -1;
+      border-radius: 20px;
+      /* Places overlay behind the content but in front of the background image */
+    }
+
+    .content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      position: relative;
+
+      h2 {
+        color: $white;
+      }
+
+      img {
+        width: 20%;
+      }
+    }
+
+    form {
+      padding: 30px;
+
+      input {
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 40px;
+        margin: 7px 0px;
+        font-size: 18px;
+        border: 2px solid $primaryColor;
+        outline: 2px solid $white;
+
+
+        &::placeholder {
+          color: #999;
+          /* Change color */
+          font-style: italic;
+          /* Change font style */
+          opacity: 1;
+          font-size: 18px;
+        }
+      }
+
+      .btn-primary {
+        width: 40%;
+        float: right;
+        outline: none;
+      }
+    }
+  }
+}

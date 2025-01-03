@@ -1,0 +1,12 @@
+.inquiries_content {
+  table {
+    table-layout: fixed;
+    overflow-wrap: break-word;
+
+    .btn-row {
+      .btn-done {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

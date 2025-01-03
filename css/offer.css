@@ -1,0 +1,145 @@
+/* special offer section start  */
+#special-offer {
+    height: 80vh;
+}
+
+.offer-main {
+    display: flex;
+    /* gap: 30px; */
+    justify-content: space-between;
+}
+
+.offer-title {
+    font-family: var(--body-font);
+    font-size: 64px;
+    font-weight: 200;
+    position: relative;
+    width: 460px;
+    padding-top: 35px;
+}
+
+.offer-des {
+    width: 70%;
+}
+
+.offer-title .t-up {
+    color: var(--secondary);
+    margin-top: -30px;
+}
+
+.offer-title .t-down {
+    color: var(--primary);
+    text-align: right;
+    margin-top: -60px;
+    margin-right: -110px;
+}
+
+.offer-right img {
+    width: 550px;
+
+}
+
+.offer-btn a {
+    color: black;
+}
+
+.offer-btn {
+    padding: 10px 20px;
+    border: none;
+}
+
+/* special offer section end   */
+/* responsive start   */
+@media screen and (max-width: 768px) {
+
+    /* special section start  */
+    #special-offer {
+        height: fit-content;
+    }
+
+    .offer-main {
+        flex-direction: column-reverse;
+    }
+
+    .offer-right {
+        /* width: 100%; */
+        margin-left: 20px;
+    }
+
+    .offer-right img {
+        width: 100%;
+        /* height: auto; */
+        margin-right: 0;
+    }
+
+    .offer-title {
+        font-size: 58px;
+        width: 100%;
+    }
+
+    .offer-title .t-down {
+        font-size: 58px;
+    }
+
+    .offer-des {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .offer-left .buttons {
+        margin-top:20px;
+        text-align: center;
+    }
+
+    /* special section end  */
+}
+
+@media screen and (min-width:769px) and (max-width: 1200px) {
+
+    /* special section start  */
+    #special-offer {
+        height: fit-content;
+    }
+
+    .offer-main {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .offer-right img {
+        height: auto;
+        width: 100%;
+    }
+
+    .offer-title {
+        font-size: 64px;
+        margin: 0;
+    }
+
+    .offer-title .t-down {
+        font-size: 96px;
+        margin: 0;
+    }
+
+    .offer-right {
+        /* border: 2px solid red; */
+        width: 100%;
+    }
+
+    .offer-left {
+        /* border: 2px solid white;  */
+        width: 500px;
+    }
+
+    .offer-btn a {
+        font-size: 30px;
+    }
+
+    .offer-left .buttons {
+        padding-top: 20px;
+    }
+
+    /* special section end  */
+}
+
+/* responsive end   */

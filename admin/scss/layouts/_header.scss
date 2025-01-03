@@ -1,0 +1,241 @@
+header {
+    position: fixed;
+
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    .navbar {
+        padding: 15px 0px;
+
+        .navbar-brand {
+            width: 150px;
+        }
+
+        .navbar-toggler {
+            background-color: $white;
+            border-radius: 3px;
+            border: 1px solid $t-color;
+        }
+
+        .offcanvas {
+
+
+            .offcanvas-header {
+                img {
+                    width: 180px;
+                }
+            }
+
+            .offcanvas-body {
+                justify-content: center;
+
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            padding: 0 15px;
+                            color: $secondaryColor;
+                            font-weight: 400;
+                            text-transform: capitalize;
+                            font-size: 18px;
+
+                            transition: 0.3s ease-in-out;
+
+                        }
+
+                        &.active,
+                        &:hover {
+                            .nav-link {
+                                color: $primaryColor;
+
+                            }
+                        }
+
+
+                    }
+
+                    .contact-ss {
+                        display: none;
+                    }
+                }
+
+
+
+            }
+
+        }
+    }
+
+
+
+    &.fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: $white;
+        background-image: none;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.082);
+
+        .navbar {
+            padding: 10px 0px;
+
+            .navbar-brand {
+                width: 100px;
+            }
+
+
+
+            .offcanvas {
+
+
+
+                .offcanvas-body {
+
+                    .navbar-nav {
+                        .nav-item {
+                            .nav-link {
+                                color: $primaryColor;
+                                font-size: 16px;
+
+                            }
+
+                            &.active,
+                            &:hover {
+                                .nav-link {
+                                    color: $liteprimaryColor;
+
+                                }
+                            }
+
+
+                        }
+
+
+                    }
+
+
+
+                }
+
+            }
+        }
+
+    }
+}
+
+// break points 
+
+@include custom_max(992px) {
+
+
+    header {
+
+
+        .navbar {
+            padding: 10px 0px;
+
+            .navbar-brand {
+                width: 120px;
+            }
+
+            .navbar-toggler {
+                background-color: $white;
+                border-radius: 20px;
+                border: 1px solid $t-color;
+            }
+
+            .offcanvas {
+
+                .offcanvas-header {
+                    img {
+                        width: 130px;
+                    }
+                }
+
+                .offcanvas-body {
+
+                    .navbar-nav {
+                        .nav-item {
+                            .nav-link {
+                                padding: 7px 0;
+                                color: $primaryColor;
+
+                                font-size: 16px;
+
+
+
+                            }
+
+
+
+
+                        }
+
+                        .contact-ss {
+                            display: block;
+                        }
+                    }
+
+
+
+                }
+
+            }
+        }
+
+        &.fixed-header {
+
+
+            .navbar {
+                padding: 10px 0px;
+
+                .navbar-brand {
+                    width: 80px;
+                }
+
+
+
+                .offcanvas {
+
+
+
+                    .offcanvas-body {
+
+                        .navbar-nav {
+                            .nav-item {
+                                .nav-link {
+                                    color: $primaryColor;
+                                    font-size: 16px;
+
+                                }
+
+
+
+
+                            }
+
+
+                        }
+
+
+
+                    }
+
+                }
+            }
+
+        }
+
+        .cnt-btn {
+            display: none;
+        }
+    }
+
+}
+
+@include custom_max(767px) {}
+
+@include custom_max(576px) {}

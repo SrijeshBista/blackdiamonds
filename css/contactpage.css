@@ -1,0 +1,65 @@
+#contact-page{
+    padding-top: 11%;
+    height: fit-content;
+}
+.contact-page-main{
+    align-items: start;
+}
+.form select{
+    width: 60%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--primary);
+    padding: 10px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border-bottom: 2px solid var(--primary);
+    color: var(--secondary);
+}
+.form select option{
+    background-color: #121212;
+}
+.contact-heading{
+    font-family: var(--body-font);
+    font-size: 64px;
+    font-weight: 200;
+    position: relative;
+    width: fit-content;
+}
+.contact-heading .t-up{
+    color: var(--primary);
+    margin-top: -30px;
+    margin-left: -30px;
+}
+.contact-heading .t-down{
+    color: var(--secondary);
+    text-align: right;
+    margin-top: -80px;
+    margin-right: -110px; 
+}
+/* responsive start  */
+@media screen and (min-width:769px) and (max-width: 1200px) {
+    #contact-page{
+        height: fit-content;
+    }
+    .contact-page-main{
+        gap: 20px;
+    }
+    .form select option{
+        font-size: 10px;
+    }
+    .form label{
+        font-size: 20px;
+    }
+    .contact-heading{
+        font-size: 50px;       
+    }
+}
+@media screen and (max-width: 768px) {
+    #contact-page{
+        padding-top: 30%;
+    }
+}
+
+/* responsive end  */

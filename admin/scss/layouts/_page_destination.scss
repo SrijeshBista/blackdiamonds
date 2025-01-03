@@ -1,0 +1,10 @@
+.destination-page-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  .card-item {
+    flex: 1 1 calc(25% - 30px);
+  }
+
+}

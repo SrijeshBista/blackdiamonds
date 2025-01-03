@@ -1,0 +1,19 @@
+.blogpost-title h1{
+    font-size: 58px;
+    color: var(--primary)
+}
+.blogpost-img{
+    width: 100%;
+    
+    height: 500px;
+}
+.blogpost-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* responsive  */
+.blogpost-title h1{
+    font-size: 36px;
+}
+/* responsive  */

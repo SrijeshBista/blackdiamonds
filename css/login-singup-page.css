@@ -1,0 +1,271 @@
+/* login page start  */
+.login-main{
+    text-align: center;
+    position: relative;
+}
+.login-main p{
+    text-align: center;
+}
+.login-title h1{
+    font-size: 34px;
+    font-family: var(--descriptiom-font);
+    font-weight: 600;
+}
+.login-form::placeholder{
+font-size: 20px;
+}
+.login-form{
+    padding: 40px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform:translate(-50%,-10%) ;
+    width: 400px;
+    border: 2px solid red;
+    background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+border-radius: 10px;
+border: 1px solid var(--primary);
+}
+.login-form input[type='text']{
+   padding: 10px;
+   font-size: 20px;
+   margin-top: 20px;
+   width: 95%;
+border: 2px solid var(--primary);
+   outline: none;
+   color: #121212;
+    background-color: var(--secondary);
+   border-radius: 20px;
+}
+.login-form input[type='password']{
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: #121212;
+     background-color: var(--secondary);
+    border-radius: 20px;
+ }
+.signup input[type='password']{
+    margin-top: 20px;
+    border: 2px solid var(--primary);
+}
+ .pass{
+    display: flex;
+    background: none;
+    justify-content: space-between;
+   border: 2px solid var(--primary);
+   margin-top: 20px;
+   background-color: var(--secondary);
+   border-radius: 20px;
+    width: 98%;
+
+ }
+ .pass button{
+    background: none;
+    border: none;
+      cursor: pointer;
+      border-radius: 30px;
+ }
+ .pass button i{
+    padding: 10px;
+    width: 20px;
+    font-size: 20px;
+    
+}
+ .login-form input[type='number']{
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100%;
+ border: 2px solid var(--primary);
+    outline: none;
+    color: #121212;
+     background-color: var(--secondary);
+    border-radius: 20px;
+ }
+ .login-form input{
+    width: 95%;
+ }
+ .login-form input[type='email']{
+    padding: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    
+ border: 2px solid var(--primary);
+    outline: none;
+    color: #121212;
+     background-color: var(--secondary);
+    border-radius: 20px;
+ }
+.login-form h1{
+    font-size: 50px;
+    font-family: var(--descriptiom-font);
+    font-weight: 600;
+    font-family:var(--button-font);
+    color: var(--primary);
+}
+.login-form input:focus {
+    box-shadow: 0 0 5px rgb(191, 238, 81); /* adjust color and radius as needed */
+    border-color: rgba(191, 238, 81);
+    transition: 500ms ease-in-out;
+  }
+  .pass button:focus{
+    box-shadow: 0 0 5px rgb(191, 238, 81); /* adjust color and radius as needed */
+    border-color: rgba(191, 238, 81);
+    transition: 500ms ease-in-out;
+  }
+.register{
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.register p a{
+    color: var(--secondary);
+   text-decoration: none; 
+}
+.register p a:hover{
+    color: var(--primary);
+    transition: 300ms ease-in-out;
+}
+.signup-btn a:hover{
+    transition: 300ms ease-in-out !important;
+    color: var(--secondary)  !important;
+}
+.signup-btn a{
+    color: var(--primary) !important;
+}
+.signup-form{
+    margin-top: 10%;
+}
+.signup-form input[type='number']{
+margin: 20px 0;
+width: 95%;
+}
+.signup-form input[type='password']{
+/* margin: 5px 0; */
+width: 95%;
+}
+.login-main .background img{
+    width: 100%;
+    object-fit: cover;
+}
+.login-main .background{
+    columns: 250px;
+    position: relative;
+    /* max-height: 350px; */
+}
+.bg{
+    background-color: rgba(3, 3, 3, 0.445);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.login-buttons:hover{
+background-color: var(--secondary);
+}
+.login-buttons{
+    background-color: var(--primary);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 20px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+.login-buttons a{
+    color: #121212;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* login page */
+/* login page responsive start  */
+@media screen and (min-width:769px) and (max-width: 1200px) {
+/* login signup page start  */
+.login-main .background{
+    columns: 200px;
+}
+.login-form{
+    width: 60%;    
+    height: 350px;
+    margin-top: 10%;
+}
+.login-form input[type='email']{
+    width: 95%;
+}
+/* login signup page end   */
+/* signup start  */
+.signup-form{
+    width: 60%;    
+    height: 450px;
+    margin-top: 10%;
+}
+.signup-form input[type='email']{
+    width: 100%;
+}
+.signup-form input{
+    margin-top: 20px;
+    width: 100%;
+}
+.signup-form input[type='text']{    
+    width: 100%;
+}
+/* signup end   */
+}
+/* login page  */
+@media screen and (max-width: 768px) {
+    .login-main .background{
+        columns: 90px;
+    }
+    .appointment-main .background{
+        padding-top: 20%;
+        columns: 110px;
+    }
+    .signup-main .background{
+        padding-top: 30%;
+        columns: 110px;
+    }
+   
+    .login-form{
+        width: 100%;    
+        height: 300px;
+        /* margin-top: 10%; */
+        padding: 40px 10px;
+    }
+    .login-form form{
+        width: 100%;
+    }
+    /* login page  */
+    /* signup start  */
+#form-page{
+height: 20vh;
+
+}
+    .signup-form{
+    width: 100%;    
+    height: 400px;
+    margin-top: 30%;
+    padding: 40px 10px;
+}
+.signup-form input[type='number']{
+    width: 95%;
+    margin: 20px 0;
+}
+.signup-form input[type='password']{
+    width: 95%;
+}
+/* signup end   */
+}
+
+
+/* login page responsive end  */

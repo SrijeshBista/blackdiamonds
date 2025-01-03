@@ -1,0 +1,141 @@
+.faq {
+
+
+
+    .faq-hero {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .hero-faq-collection {
+            width: 52%;
+
+            .faq-item {
+                border: 1px solid #ddd;
+                margin: 10px 0;
+                border-radius: 5px;
+                overflow: hidden;
+                background-color: #fff;
+                display: block;
+
+                .faq-question {
+                    cursor: pointer;
+                    padding: 15px;
+                    background-color: $primaryColor;
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    h6 {
+                        margin: 0;
+                        color: $white;
+                        font-weight: 500;
+                    }
+
+                    .icon {
+                        display: flex;
+                        align-items: center;
+
+                        i {
+                            font-size: 20px;
+                            margin-left: 10px;
+                            display: none;
+
+                            &.fa-plus {
+                                display: inline;
+                                color: $white;
+                            }
+                        }
+                    }
+
+                    &.active {
+                        .icon {
+                            .fa-plus {
+                                display: none;
+                            }
+
+                            .fa-minus {
+                                display: inline;
+                                color: $secondaryColor;
+                            }
+                        }
+
+                    }
+                }
+
+                .faq-answer {
+                    display: none;
+                    padding: 15px;
+                    border-top: 1px solid #ddd;
+                }
+
+                .block {
+                    display: block;
+                }
+            }
+
+            .faq-hidden {
+                display: none;
+            }
+
+
+        }
+
+        .hero-faq-content {
+            width: 42%;
+
+            .faq-btn {
+                padding: 20px 0px;
+            }
+
+        }
+
+
+
+
+
+
+    }
+}
+
+
+// responsive 
+
+
+@include custom_max(992px) {
+
+
+    .faq {
+
+
+
+        .faq-hero {
+            flex-direction: column-reverse;
+
+            .hero-faq-collection {
+                width: 100%;
+
+
+
+
+            }
+
+            .hero-faq-content {
+                width: 100%;
+
+
+
+            }
+
+
+
+
+
+
+        }
+    }
+
+
+}

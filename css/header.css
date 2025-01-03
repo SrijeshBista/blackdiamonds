@@ -1,0 +1,260 @@
+/* header start  */
+.nav-main {
+    display: flex;
+    justify-content: space-between;
+    /* Default state */
+    align-items: center;
+    transition: justify-content 0.5s ease-in-out;
+}
+
+.logo img {
+    width: 170px;
+}
+
+.nav-bar li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.nav-bar li a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-family: "Kite One", sans-serif;
+    font-weight: 400;
+}
+
+.nav-bar li a:hover {
+    color: #D1B935;
+}
+
+.nav-button button {
+    padding: 10px 30px;
+
+    font-family: "Kite One", sans-serif;
+    border: none;
+}
+
+.nav-button button a {
+    color: var(--secondary);
+    text-decoration: none;
+    display: none;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* General Styles */
+.hamburger-menu {
+    display: none;
+    position: relative;
+}
+
+/* Hamburger Lines */
+.hamburger-line {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    z-index: 20;
+    /* Ensure it appears above the menu */
+}
+
+.hamburger-line .line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--secondary);
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Add Line Animation */
+#menu-toggle:checked+.hamburger-line .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle:checked+.hamburger-line .line:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked+.hamburger-line .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Fullscreen Menu */
+.ham-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.ham-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.ham-menu li {
+    margin: 15px 0;
+}
+
+.ham-menu a {
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--secondary);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.ham-menu a:hover {
+    color: var(--primary);
+    /* Add a hover effect with your primary color */
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Show Menu when Checked */
+#menu-toggle:checked~.ham-menu {
+    display: flex;
+    opacity: 1;
+
+}
+
+/* CTA Button Animation */
+.cta-button {
+    right: 20px;
+    top: 80px;
+    /* Adjust based on your navbar height */
+    z-index: 10001;
+    display: none;
+    /* Initially hidden */
+    width: 100%;
+    border-radius: 35px;
+    border: 1px solid var(--primary);
+    font-family: "Kite One", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button a {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-button span {
+    padding-right: 10px;
+}
+
+.appointment-btn a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.cta-button.show {
+    display: block;
+    /* Show when activated */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #bca426;
+    /* Slightly darker shade */
+    transform: scale(1.1);
+}
+
+.header-login.show {
+    display: block;
+    /* Show when activated */
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.header-login:hover {
+    transform: scale(1.1);
+    /* border: 2px solid var(--primary); */
+}
+
+.cta-button i {
+    /* border: 2px solid#121212; */
+    color: #121212;
+    padding: 13px 15px;
+    border-radius: 50%;
+    background-color: var(--primary);
+}
+
+.header-login i {
+    border: 2px solid#121212;
+    color: #121212;
+    padding: 10px 13px;
+    border-radius: 50%;
+    /* margin-right:20px; */
+    background-color: var(--primary);
+
+}
+
+.header-login .loginbtn {
+    border: none;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header-login {
+    /* border: 1px solid var(--secondary); */
+    font-family: var(--button-font);
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    background-color: transparent;
+    /* width: 130px; */
+}
+
+.loginbtn:hover span {
+    color: #121212;
+
+}
+
+.loginbtn:hover i {
+    background-color: var(--secondary);
+    transition: 300ms ease-in-out;
+
+}
+
+.header-login span {
+    float: right;
+    padding-right: 20px;
+    padding-top: 10px;
+    font-family: "Kite One";
+    color: var(--secondary);
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.appointment-btn {
+    width: 30%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+}
+
+/* header end  */

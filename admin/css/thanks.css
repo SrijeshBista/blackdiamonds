@@ -1,0 +1,73 @@
+body {
+    height: 100vh;
+    /* min-height: 750px; */
+}
+
+.thanks {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.thanks .message {
+    font-family: "Open Sans", sans-serif;
+    display: inline-block;
+    /* padding: 40px; */
+}
+
+.thanks .message h1 {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    word-spacing: 0.05em;
+    color: #333;
+}
+
+.thanks .message p {
+    font-size: 16px;
+    word-spacing: 0.05em;
+    color: #494949;
+    padding-top: 40px;
+}
+
+.thanks .message .redirect {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.thanks .message .redirect i {
+    color: #333;
+    padding-right: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.thanks .message .redirect h5 {
+    color: #333;
+    font-weight: 500;
+    font-size: 18px;
+    word-spacing: 0.05em;
+    margin-bottom: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.thanks .message .redirect:hover {
+    text-decoration: none;
+}
+
+.thanks .message .redirect:hover i {
+    color: #4b83fc;
+}
+
+.thanks .message .redirect:hover h5 {
+    color: #4b83fc;
+}

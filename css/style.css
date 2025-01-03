@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Kite+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kite+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url("header.css");
+@import url("banner.css");
+@import url("about.css");
+@import url("service.css");
+@import url("gallery.css");
+@import url("offer.css");
+@import url("contact.css");
+@import url("blog-page.css");
+@import url("service-page.css");
+@import url("login-singup-page.css");
+@import url("animation.css");
+@import url("gallery-page.css");
+@import url("contactpage.css");
+@import url("footer.css");
+@import url("blogpost.css");
+@import url("academy-page.css");
+@import url("appointment.css");
+@import url("profile.css");
+@import url("thanks.css");
+
+:root{
+    --primary: #D1B935;
+    --secondary: #EEEEEE;
+    --body-font:  "Playfair Display", serif;
+    --description-font:"Julius Sans One", sans-serif;
+    --button-font:"Editor's Note";
+}
+p{
+    font-family: var(--description-font);
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,521 @@
+#services-page {
+    height: fit-content;
+}
+
+/* hair section start   */
+.work-main {
+    display: flex;
+    padding-top: 22vh;
+    gap: 40px;
+}
+
+.work-main,
+.nail-work-main,
+.makeup-main ul li {
+    color: #EEEEEE;
+    background: none;
+    margin: 5px;
+    text-align: left;
+    font-size: 16px;
+    font-family: var(--description-font);
+}
+
+.hair-title {
+    font-family: var(--body-font);
+    font-size: 74px;
+    font-weight: 200;
+    position: relative;
+    width: fit-content;
+
+}
+
+.hair-left img {
+    width: 535px;
+    padding: 15px 0;
+    border: 1px solid var(--primary);
+}
+
+.hair-title .t-up {
+    color: var(--primary);
+    margin-top: -30px;
+}
+
+.hair-title .t-down {
+    color: var(--secondary);
+    text-align: right;
+    margin-top: -90px;
+    margin-right: 120px;
+}
+
+.hair-des {
+    width: 650px;
+}
+
+.hair-work-btn-I {
+    padding: 13px 20px;
+    border: none;
+    margin-right: 40px;
+    margin-top: 60px;
+}
+
+.hair-work-btn-II {
+    padding: 10px 20px;
+}
+
+.hair-work-btn-I a {
+    color: #121212;
+}
+
+/* hair section end   */
+/* nail section start  */
+
+.nail-work-main {
+    display: flex;
+    gap: 40px;
+    padding-top: 10vh;
+    margin-left: 5%;
+    align-items: flex-start;
+    justify-content: flex-end
+}
+
+.nail-work-title {
+    font-family: var(--body-font);
+    font-size: 54px;
+    font-weight: 200;
+    position: relative;
+    width: 460px;
+    padding-top: 35px;
+}
+
+.nail-work-des {
+    width: 550px;
+}
+
+.nail-work-title .t-up {
+    color: var(--secondary);
+    margin-top: -80px;
+    margin-left: 145px;
+}
+
+.nail-work-title .t-down {
+    color: var(--primary);
+    text-align: right;
+    margin-top: -70px;
+    margin-right: -100px;
+}
+
+.nail-work-btn {
+    padding: 10px 20px;
+    border: none;
+    margin-right: 30px;
+}
+
+.nail-work-btn a {
+    color: #121212;
+}
+
+.nail-btn {
+    padding: 10px 20px;
+}
+
+.nail-work-left .buttons {
+    margin-top: 50px;
+}
+
+.nail-work-right img {
+    width: 550px;
+    height: 500px;
+    border: 2px solid var(--primary);
+    object-fit: cover;
+}
+
+/* nail section end   */
+/* bridal section start    */
+.makeup-main {
+    display: flex;
+    gap: 40px;
+}
+
+.makeup-title {
+    font-family: var(--body-font);
+    font-size: 64px;
+    font-weight: 200;
+    position: relative;
+    width: 170px;
+
+}
+
+.makeup-left img {
+    width: 535px;
+    height: 505px;
+    object-fit: cover;
+}
+
+.makeup-title .t-up {
+    color: var(--primary);
+    margin-top: -65px;
+    margin-left: 0px;
+}
+
+.makeup-title .t-down {
+    color: var(--secondary);
+    text-align: right;
+    margin-top: -70px;
+    margin-left: 265px;
+}
+
+.makeup-des {
+    width: 650px;
+}
+
+.make-up-btn {
+    padding: 13px 20px;
+    border: none;
+    margin-right: 40px;
+    margin-top: 60px;
+}
+
+.makeup-btn {
+    padding: 10px 20px;
+}
+
+.make-up-btn a {
+    color: #121212;
+}
+
+/* bridal section end    */
+/* responsive start  */
+@media screen and (min-width:769px) and (max-width: 1200px) {
+
+    /* services page start  */
+    /* top section start  */
+    #hair-work {
+        height: fit-content;
+    }
+
+    .work-main {
+        flex-direction: row;
+        align-items: center;
+        padding-top: 10%;
+    }
+
+    .hair-left img {
+        width: 370px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .hair-title .t-up {
+        font-size: 64px;
+    }
+
+    .hair-title .t-down {
+        font-size: 64px;
+    }
+
+    .hair-des {
+        width: 370px;
+    }
+
+    .hair-work-btn-I {
+        margin-bottom: 20px;
+        margin-left: 60px;
+    }
+
+    .hair-work-btn-II {
+        margin-left: 20px;
+    }
+
+    .hair-right .buttons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hair-work-btn-II {
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    .hair-work-btn-I {
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    /* top section end   */
+    /* middle section start  */
+    #nail-work {
+        height: fit-content;
+    }
+
+    .nail-work-main {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .nail-work-right {
+        width: 45%;
+        /* border: 2px solid red; */
+    }
+
+    .nail-work-left {
+        width: 60%;
+        /* border: 2px solid white; */
+        height: 450px;
+
+    }
+
+    .nail-work-right img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .nail-work-left .buttons {
+        margin: 0;
+        display: flex;
+    }
+
+    .nail-work-des {
+        width: fit-content;
+    }
+
+    .nail-work-title .t-up {
+        font-size: 64px;
+    }
+
+    .nail-work-title .t-down {
+        font-size: 64px;
+    }
+
+    /* middle section end   */
+    /* bottom section start  */
+    #makeup {
+        height: fit-content;
+    }
+
+    .makeup-main {
+        flex-direction: row;
+        padding-top: 40px;
+        margin: 0;
+    }
+
+    .makeup-left img {
+        width: 370px;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .makeup-title {
+        width: 100px;
+    }
+
+    .makeup-title .t-up {
+        font-size: 64px;
+    }
+
+    .makeup-title .t-down {
+        font-size: 64px;
+        margin-top: -30px;
+        margin-right: -235px;
+    }
+
+    .makeup-des {
+        width: 350px;
+    }
+
+    .makeup-right .buttons {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .hair-work-btn-I {
+        margin-right: 10px;
+    }
+
+    .hair-work-btn-II {
+        padding: 7px 7px;
+    }
+
+    /* bottom section end  */
+    /* services page end   */
+}
+
+@media screen and (max-width: 768px) {
+    #hair-work {
+        height: fit-content;
+    }
+
+    .work-main,
+    .nail-main,
+    .makeup-main {
+        flex-direction: column;
+        align-items: start;
+        padding-top: 35%;
+    }
+
+    .hair-left {
+        width: 100%;
+    }
+
+    .hair-left img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .hair-title {
+        padding-top: 0;
+    }
+
+    .hair-title .t-up {
+        font-size: 64px;
+    }
+
+    .hair-title .t-down {
+        font-size: 64px;
+    }
+
+    .hair-des {
+        width: 100%;
+    }
+
+    .hair-work-btn-I {
+        margin-bottom: 20px;
+        margin-left: 60px;
+    }
+
+    .hair-work-btn-II {
+        margin-left: 20px;
+    }
+
+    .hair-right .buttons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hair-work-btn-II {
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    .hair-work-btn-I {
+        margin: 0;
+        padding: 10px 15px;
+    }
+
+    /* top section end   */
+    /* mtiddle section  */
+    .nail-work-main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-top: 30px;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .nail-work-right {
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+
+    .nail-work-title {
+        padding-top: 0;
+        width: 100%;
+    }
+
+    .nail-work-left {
+        width: 100%;
+        /* border: 2px solid white; */
+        height: 470px;
+
+    }
+
+    .nail-work-right img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .nail-work-left .buttons {
+        margin: 0;
+        display: flex;
+    }
+
+    .nail-work-des {
+        width: fit-content;
+    }
+
+    .nail-work-title .t-up {
+        font-size: 64px;
+    }
+
+    .nail-work-title .t-down {
+        font-size: 64px;
+    }
+
+    /* mtiddle section  */
+    /* bottom section start  */
+    #makeup {
+        height: fit-content;
+    }
+
+    .makeup-main {
+        flex-direction: column;
+        padding-top: 0px;
+        margin-top: 50%;
+    }
+
+    .makeup-left {
+        width: 100%;
+    }
+
+    .makeup-left img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .makeup-title {
+        width: 100px;
+    }
+
+    .makeup-title .t-up {
+        font-size: 64px;
+    }
+
+    .makeup-title .t-down {
+        font-size: 64px;
+        margin-top: -30px;
+        margin-right: -235px;
+    }
+
+    .makeup-des {
+        width: 100%;
+    }
+
+    .makeup-right .buttons {}
+
+    .hair-work-btn-I {
+        margin-right: 10px;
+    }
+
+    .hair-work-btn-II {
+        padding: 7px 7px;
+    }
+
+
+    /* bottom section end   */
+}
+
+/* responsive end  */
