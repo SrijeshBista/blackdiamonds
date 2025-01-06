@@ -14,6 +14,26 @@ $user_email = $_SESSION['user_email'];
 <section id="appointment-section">
     <div class="container">
         <div class="login-main appointment-main">
+        <div class="background">
+                <!-- Background images -->
+                 <img src="./img/gif-II.gif" alt="">
+                 <img src="./img/gif-IV.gif" alt="">
+                 <img src="./img/gif-V.gif" alt="">
+                 <img src="./img/gif-II.gif" alt="">
+                 <img src="./img/gif-IV.gif" alt="">
+                 <img src="./img/gif-V.gif" alt="">
+                 <img src="./img/gif-II.gif" alt="">
+                 <img src="./img/gif-IV.gif" alt="">
+                 <img src="./img/gif-V.gif" alt="">
+                 <img src="./img/gif-II.gif" alt="">
+                 <img src="./img/gif-IV.gif" alt="">
+                 <img src="./img/gif-V.gif" alt="">
+                 <img src="./img/big-gif-I.gif" alt="">
+                 <img src="./img/gif-II.gif" alt="">
+                 <img src="./img/gif-IV.gif" alt="">
+                 <img src="./img/gif-V.gif" alt="">
+                 <div class="bg"></div>
+            </div>
             <div class="appointment-form login-form">
                 <h2>Book Your Appointment</h2>
                 <form id="appointmentForm" action="appointment_process.php" method="POST">
@@ -37,3 +57,7 @@ $user_email = $_SESSION['user_email'];
         </div>
     </div>
 </section>
+<!-- footer start  -->
+ <?php
+    include ("./partial/footer.php")
+?>
