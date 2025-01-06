@@ -21,8 +21,12 @@
                  <p>Step into your new chapter with confidence and elegance—because every bride deserves to feel like a queen!</p>
              </div>
              <div class="buttons">
-                 <button class="primary-btn hair-work-btn-I "><a href="#">Book Appointment</a></button>
-                 <button class="secondary-btn hair-work-btn-II "><a href="#">See Gallery</a></button>
+                 <?php if (isset($_SESSION['user_id'])): ?>
+                     <button class="primary-btn hair-work-btn-I"><a href="appointment.php">Book Appointment</a></button>
+                 <?php else: ?>
+                     <button class="primary-btn hair-work-btn-I"><a href="login.php">Book Appointment</a></button>
+                 <?php endif; ?>
+                 <button class="secondary-btn hair-work-btn-II "><a href="gallery-page.php">See Gallery</a></button>
              </div>
          </div>
      </div>

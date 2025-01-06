@@ -11,11 +11,20 @@
                     <p>Discover wonderful offers at Black Diamond Family Salon Academy Beauty Lounge! Stay updated with exclusive deals on our premium beauty services, including hair, skin, makeup, and nails. From seasonal discounts to special promotions, we bring you exciting opportunities to indulge in top-notch beauty treatments at unbeatable prices. Don’t miss out—log in to your account to access the latest updates and enjoy our exceptional services at incredible value. Your journey to beauty and savings starts here!</p>
                 </div>
                 <div class="buttons">
-                    <button class="primary-btn offer-btn"><a href="#">Book Now</a></button>
+
+
+                    <?php if (isset($_SESSION['user_id'])): ?>
+
+
+                        <button class="primary-btn offer-btn"><a href="appointment.php">Book Now</a></button>
+                    <?php else: ?>
+                        <button class="primary-btn offer-btn"><a href="login.php">Book Now</a></button>
+                    <?php endif; ?>
                 </div>
             </div>
-            <div class="offer-right">
+            <div class="offer-right ">
                 <img src="./img/special-offer.png" alt="">
+
             </div>
         </div>
     </div>

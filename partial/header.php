@@ -2,9 +2,13 @@
 include('./config/constants.php');
 include('./config/functions.php');
 
-
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
+}
+
+$userLoggedIn = false;
+if (isset($_SESSION['user_id'])) {
+    $userLoggedIn = true;
 }
 ?>
 
@@ -26,11 +30,12 @@ if (session_status() == PHP_SESSION_NONE) {
     <link rel="manifest" href="./site.webmanifest">
     <script src="./js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
 </head>
 
 <body>
 
-    <!-- header start  -->
     <header>
         <div class="container">
             <div class="nav-main">
@@ -50,65 +55,20 @@ if (session_status() == PHP_SESSION_NONE) {
                 </div>
 
                 <div class="appointment-btn">
-
-                    <?php if (isset($_SESSION['user_id'])): ?>
-
-
-                        <a href="appointment.php">
-                            <div id="cta-button" class="cta-button">
-                                <i class="fa-solid fa-calendar-days"></i>
-                                <span>Book Appointment</span>
-                            </div>
-                        </a>
-                    <?php else: ?>
-                        <a href="appointment.php">
-                            <div id="cta-button" class="cta-button">
-                                <i class="fa-solid fa-calendar-days"></i>
-                                <span>Book Appointment</span>
-                            </div>
-                        </a>
-                    <?php endif; ?>
-
+                    <a href="<?= $userLoggedIn ? 'appointment.php' : 'login.php' ?>">
+                        <div id="cta-button" class="cta-button">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <span>Book Appointment</span>
+                        </div>
+                    </a>
                     <div class="header-login">
-                        <?php if (isset($_SESSION['user_id'])): ?>
-                            <!-- Show Profile button if logged in -->
+                        <?php if ($userLoggedIn): ?>
                             <a href="profile.php"><button class="primary-btn loginbtn"> <i class="fa-solid fa-user"></i> <span> Profile</span></button></a>
                         <?php else: ?>
-                            <!-- Show Login button if not logged in -->
                             <a href="login.php"><button class="primary-btn loginbtn"> <i class="fa-solid fa-user"></i><span> Login </span></button></a>
                         <?php endif; ?>
                     </div>
                 </div>
-
-                <div class="hamburger-menu">
-                    <input type="checkbox" id="menu-toggle">
-                    <label for="menu-toggle" class="hamburger-line">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </label>
-                    <div class="ham-menu">
-                        <ul>
-                            <li><a href="index.php">Home</a></li>
-                            <li><a href="service.php">Service</a></li>
-                            <li><a href="gallery-page.php">Gallery</a></li>
-                            <li><a href="aboutpage.php">About us</a></li>
-                            <li><a href="blog.php">Blogs</a></li>
-                            <li><a href="academy.php">Academy</a></li>
-                            <li><a href="contactpage.php">Contact</a></li>
-                        </ul>
-
-                        <!-- <div class="header-login">
-                            <?php if (isset($_SESSION['user_id'])): ?>
-                                <a href="profile.php"><button class="primary-btn login-buttons"> <i class="fa-solid fa-user"></i>Profile</button></a>
-                            <?php else: ?>
-                                <a href="login.php"><button class="primary-btn login-buttons"> <i class="fa-solid fa-user"></i>Login</button></a>
-                            <?php endif; ?>
-                        </div> -->
-                    </div>
-                </div>
-
             </div>
         </div>
     </header>
-    <!-- header end  -->

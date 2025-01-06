@@ -24,14 +24,24 @@
                     <div class="buttons">
                         <input type="submit" id="submitButton" class="secondary-btn contact-btn-I">
                     </div>
-                </form>  
-                <div class="contact-button">
-                    <p>OR</p><button class="primary-btn contact-btn-II">Book an appointment </button>
-                </div>
-                <div class="contact-login-btn">
-                    <p>YOU NEED TO LOGIN TO BOOK AN APPOINTMENT </p>
-                    <p><a href="login.php">LOGIN</a> OR <a href="signup.php">SIGNUP</a></p>
-                </div>
+                </form>
+                <?php if (isset($_SESSION['user_id'])): ?>
+                    <div class="contact-button">
+                        <p>OR</p><button class="primary-btn contact-btn-II"> <a href="appointment.php">Book an appointment </a> </button>
+                    </div>
+
+                <?php else: ?>
+                    <div class="contact-button">
+                        <p>OR</p><button class="primary-btn contact-btn-II">Book an appointment </button>
+                    </div>
+                    <div class="contact-login-btn">
+                        <p>YOU NEED TO LOGIN TO BOOK AN APPOINTMENT </p>
+                        <p><a href="login.php">LOGIN</a> OR <a href="signup.php">SIGNUP</a></p>
+                    </div>
+
+                <?php endif; ?>
+
+
             </div>
         </div>
     </div>

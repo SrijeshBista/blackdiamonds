@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   <div class="admin-login-box">
     <div class="content">
       <h2 class="section-heading">Login</h2>
-      <img src="../images/logo.png" alt="">
+      <img src="../img/logo.png" alt="">
     </div>
 
 

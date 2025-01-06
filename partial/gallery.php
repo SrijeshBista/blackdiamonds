@@ -56,7 +56,7 @@ while (count($images) < 7) {
                 <p>Explore our gallery of exceptional work, showcasing the artistry and expertise of Black Diamond Family Salon Academy Beauty Lounge. From stunning hair transformations to flawless makeup, rejuvenating skin treatments, and elegant nail designs, our gallery highlights the dedication and talent of our team. Each image reflects our commitment to excellence in beauty services and education. Be inspired by our creativity and professionalism as we help clients and students achieve their dream looks and skills in the beauty industry.</p>
             </div>
             <div class="buttons">
-                <button class="secondary-btn gallery-btn"><a href="#">See More</a></button>
+                <button class="secondary-btn gallery-btn"><a href="gallery-page.php">See More</a></button>
             </div>
         </div>
     </div>

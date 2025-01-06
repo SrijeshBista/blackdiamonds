@@ -50,15 +50,28 @@ include '../config/constants.php'; ?>
       </div>
       <div class="dashboard-item">
         <?php
-        $sql = "SELECT  * FROM blog";
+        $sql = "SELECT * FROM appointment WHERE status='processing'";
+
         $res = mysqli_query($conn, $sql);
         $count = mysqli_num_rows($res);
         ?>
-        <i class="fa-solid fa-blog"></i>
+        <i class="fa-solid fa-calendar-check"></i>
         <h2 class="section-heading">
           <?php echo $count ?>
         </h2>
-        <h3 class="section-title">Blogs</h3>
+        <h3 class="section-title">New Appointments</h3>
+      </div>
+      <div class="dashboard-item">
+        <?php
+        $sql = "SELECT * FROM inquires WHERE status='processing'";
+        $res = mysqli_query($conn, $sql);
+        $count = mysqli_num_rows($res);
+        ?>
+        <i class="fa-solid fa-share"></i>
+        <h2 class="section-heading">
+          <?php echo $count ?>
+        </h2>
+        <h3 class="section-title">New Inquiries</h3>
       </div>
 
     </div>

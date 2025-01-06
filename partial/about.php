@@ -20,12 +20,12 @@
                         <p>HAPPY TRAINEES</p>
                     </div>
                     <div class="about-card">
-                        <h3>30<span>+</span></h3>
-                        <p>HAPPY TRAINEES</p>
+                        <h3>1200<span>+</span></h3>
+                        <p>HAPPY clients</p>
                     </div>
                     <div class="about-card">
-                        <h3>30<span>+</span></h3>
-                        <p>HAPPY TRAINEES</p>
+                        <h3>99<span>%</span></h3>
+                        <p>Customer satisfaction </p>
                     </div>
                 </div>
             </div>

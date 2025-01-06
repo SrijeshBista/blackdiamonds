@@ -1,16 +1,19 @@
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const ctaButton = document.getElementById("cta-button");
     const navMain = document.querySelector(".nav-main");
     const bannerSection = document.getElementById("banner");
 
     // Check if it's the index page
-  const isIndexPage =
-  window.location.pathname === "/" || 
-  window.location.pathname === "/index.php" || 
-  window.location.pathname.includes("index") || 
-  window.location.pathname === "/localhost/blackdimond/" || 
-  window.location.pathname === "/localhost/index.php";
-// Function to handle visibility of the CTA button
+    const isIndexPage =
+        window.location.pathname === "/" ||
+        window.location.pathname === "/index.php" ||
+        window.location.pathname.includes("index") ||
+        window.location.pathname === "/localhost/blackdimond/" ||
+        window.location.pathname === "/localhost/index.php";
+    // Function to handle visibility of the CTA button
     const updateCTAButtonVisibility = () => {
         if (isIndexPage && bannerSection) {
             const bannerRect = bannerSection.getBoundingClientRect();
@@ -46,5 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         navMain.classList.add("center"); // Move navbar items to the center
     }, 1000); // Adjust delay as needed (1 second here)
 });
+
+
 
 
